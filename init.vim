@@ -22,7 +22,7 @@ call plug#begin('~/.local/share/nvim/plugged')
   Plug 'scrooloose/nerdtree'
   Plug 'Xuyuanp/nerdtree-git-plugin'
   Plug 'jistr/vim-nerdtree-tabs'
-  Plug 'iCyMind/NeoSolarized'
+  Plug 'romainl/flattened'
   " JS
   Plug 'mattn/emmet-vim'
   Plug 'moll/vim-node'
@@ -37,8 +37,8 @@ call plug#end()
 set termguicolors
 filetype plugin indent on
 syntax enable
-colorscheme NeoSolarized
-set background=dark
+colorscheme flattened_dark
+" set background=dark
 map <C-n> :NERDTreeToggle<CR>
 set number
 autocmd StdinReadPre * let s:std_in=1
